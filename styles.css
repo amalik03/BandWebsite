@@ -33,12 +33,15 @@ body {
   /* position: relative; */
 }
 #logo {
-  /* position: absolute; */
+  position: absolute;
   width: 25vh;
   height: auto;
-  box-shadow: 0 0 0.2px 0.2px #635bd0;
-  border-radius: 12px;
-  /* border: 1px solid #635bd0; */
+  /* box-shadow: 0 0 0.2px 0.2px #635bd0; */
+  /* box-shadow: 0 0 20px 0px #14132c; */
+  box-shadow: 0 2px 0px 0px #14132c, 2px 0 0px 0px black, -2px 0 0px 0px black;
+
+  border-radius: 8px;
+  /* border-bottom: 1px solid #14132c; */
   /* -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
   filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black); */
   z-index: 2;
@@ -149,13 +152,13 @@ body {
 }
 
 .band-member1 {
-  position: absolute;
+  /* position: absolute;
   width: 30px;
   height: 30px;
   top: 40%;
   left: 40%;
   background-image: radial-gradient(15px 15px, #9c0001, rgba(255, 255, 255, 0));
-  animation: band-member-twinkle 5s ease-in-out infinite;
+  animation: band-member-twinkle 5s ease-in-out infinite; */
 }
 .band-member2 {
 }
