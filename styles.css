@@ -27,11 +27,27 @@ body {
   overflow: hidden;
 }
 
-#logo-container {
+#gradient {
   display: flex;
   justify-content: center;
-  /* position: relative; */
+  align-items: center;
+  height: 100vh;
 }
+
+#logo-container {
+  position: relative;
+  height: 25vh;
+  width: 25vh;
+  border: 4px solid transparent;
+  border-image: radial-gradient(
+      circle at center,
+      rgb(99, 91, 208, 0.4) 0%,
+      rgb(99, 91, 208, 0) 100%
+    )
+    1;
+  border-radius: 50%;
+}
+
 #logo {
   position: absolute;
   width: 25vh;
@@ -46,26 +62,22 @@ body {
   filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black); */
   z-index: 2;
 }
-/* #img-bg-blur,
+#img-bg-blur,
 #img-bg {
-  width: 25vh;
-  height: 25vh;
-  background-image: url("assets/pics/logo.JPG");
-  background-size: contain;
-  box-shadow: 0 0 0.5px 0.5px #635bd0 inset;
+  position: absolute;
+  inset: 0;
+  background: url("assets/pics/logo.JPG") center/contain no-repeat;
+  border-radius: 8px;
 }
 #img-bg-blur {
-  filter: blur(100px);
-} */
-
-#gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0.25vh;
-  background: rgba(99, 91, 208, 0.038) center / 50vw 50vh round;
+  filter: blur(30px);
+  opacity: 0.6;
+  z-index: 1;
 }
+#img-bg {
+  z-index: 2;
+}
+
 .stars {
   background-repeat: repeat;
   background-position: center;
