@@ -157,6 +157,7 @@ body {
   background-size: 50vw 50vh;
   position: absolute;
   inset: 0; /* Position the div 0px from each edge of its parent (measured against the view point since other parents are position static (children ignores parents with static positioning) since static is default and doesn't count as a contatining block).  */
+  z-index: -1;
 }
 
 .stars1 {
@@ -277,4 +278,14 @@ body {
   50% {
     transform: scale(1.5);
   }
+}
+#back {
+  display: flex;
+  width: 60px;
+  height: 20px;
+  background-color: white;
+  border-radius: 4px;
+}
+#back:hover {
+  transform: scale(1.05);
 }
