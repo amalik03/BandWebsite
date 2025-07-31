@@ -99,6 +99,18 @@ body {
   height: auto;
   border-radius: 8px;
   z-index: 2;
+  /* Remove white background and make it transparent */
+  mix-blend-mode: screen;
+  /* Alternative approaches - uncomment one if screen doesn't work well */
+  /* mix-blend-mode: multiply; */
+  /* mix-blend-mode: color-dodge; */
+  /* filter: brightness(1.2) contrast(1.1); */
+  
+  /* Additional options for fine-tuning */
+  /* background: transparent; */
+  /* backdrop-filter: none; */
+  /* For more precise control, you might need to edit the image itself */
+  /* or use: filter: drop-shadow(0 0 10px rgba(255,255,255,0.5)); instead of removing white */
 }
 .band-name {
   font-family: "Neon", sans-serif;
