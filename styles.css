@@ -85,13 +85,13 @@ body {
   /* aspect-ratio: 1 / 1; /* so the border does not stay one size even when screen size gets smaller or bigger */
   height: auto;
   width: 18vw;
-  border: 2px solid transparent;
+  /* border: 2px solid transparent;
   border-image: radial-gradient(
       circle at center,
       rgb(99, 91, 208, 0.4) 0%,
       rgb(99, 91, 208, 0) 100%
     )
-    1;
+    1; */
 }
 #logo {
   position: relative;
@@ -100,6 +100,7 @@ body {
   border-radius: 8px;
   z-index: 2;
 }
+
 .band-name {
   font-family: "Neon", sans-serif;
   font-weight: 300;
