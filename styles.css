@@ -124,8 +124,7 @@ body {
   vertical-align: top;
   object-fit: cover;
   object-position: center;
-  mix-blend-mode: darken;
-  filter: contrast(1.3) brightness(0.9);
+  mix-blend-mode: multiply;
 }
 .band-name {
   font-family: "Neon", sans-serif;
