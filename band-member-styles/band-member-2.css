@@ -1,0 +1,6 @@
+body {
+  background-repeat: cover;
+  background: radial-gradient(circle at bottom, #015f3c -25%, black 75%);
+  height: 100vh;
+  overflow: hidden;
+}

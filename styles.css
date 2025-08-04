@@ -39,12 +39,14 @@ body {
 #gradient {
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: rgba(99, 91, 208, 0.05) center / 50vw 50vh round;
+  background: rgba(99, 91, 208, 0.1) center / 50vw 50vh round;
 }
 .navbar {
   position: absolute;
@@ -129,8 +131,8 @@ body {
 }
 .the {
   z-index: 3;
-  top: -30%;
-  left: auto;
+  top: -40%;
+  left: 38%;
 }
 .neon2 {
   color: white;
@@ -282,6 +284,9 @@ body {
 }
 #back {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 60px;
   height: 20px;
   background-color: white;
