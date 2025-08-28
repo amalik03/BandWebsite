@@ -53,24 +53,22 @@ body {
   /* background: transparent; */
 }
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 1.3vh;
+  left: 50%;
   display: flex;
-  align-items: stretch;
-  justify-content: center;
   width: 70%;
-  margin: 0 auto;
+  transform: translateX(-50%);
   border: 4px solid rgba(200, 200, 200, 0.132);
   border-radius: 2.5vh;
   height: 6.5vh;
   background: rgba(200, 200, 200, 0.15);
-  margin-bottom: -6.5vh;
   z-index: 3;
 }
 
 #navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   color: white;
   top: 1vh;
@@ -79,13 +77,34 @@ body {
 
 #navbar a:first-child {
   border-left: none;
+  border-radius: 2vh 0 0 2vh;
+}
+/* Fixing the edges so that its rounded when hovering and the border doesnt clip through the navbar*/
+#navbar a:last-child {
+  border-radius: 0 2vh 2vh 0;
 }
 #navbar a {
+  text-decoration: none;
+  color: white;
   border-left: 2px solid black;
-  flex: 1;
+  flex-grow: 1;
+  /* flex: 1; */
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.2s ease-in-out;
+}
+#navbar a:hover {
+  cursor: pointer;
+  background: rgba(200, 200, 200, 0.2);
+}
+#navbar a p {
+  display: inline-block;
+  transition: transform 0.3s linear;
+}
+/* Making the text bigger when we hover over it on the navbar */
+#navbar a:hover p {
+  transform: scale(1.3);
 }
 #logo-container {
   position: relative;
@@ -126,9 +145,6 @@ body {
   z-index: 2;
   left: -50%;
   top: 35%;
-  /* font-size: 1.7rem; */
-  /* display: flex; */
-  /* gap: 0.03rem; */
 }
 .neon1 {
   color: white;
