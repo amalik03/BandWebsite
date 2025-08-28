@@ -1,6 +1,6 @@
 body {
-  background-repeat: cover;
   background: radial-gradient(circle at bottom, #fbe706 -25%, black 75%);
-  height: 100vh;
-  overflow: hidden;
+}
+#image-container img {
+  box-shadow: 0 4px 12px #fbe70630;
 }

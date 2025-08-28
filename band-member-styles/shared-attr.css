@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Neon";
+  src: url("./assets/fonts/Switzer-Extralight.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+  background-repeat: cover;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+h3 {
+  margin: 0;
+}
+.vert-container {
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  align-items: center; /* center them horizontally */
+  justify-content: flex-start; /* keep everything at the top */
+  min-height: 100vh;
+  position: relative; /* keep stars/back button behavior */
+}
+#image-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 1vh;
+}
+
+#image-container img {
+  border-radius: 5%;
+  height: auto;
+  width: 33%;
+}
+
+#name-instrument {
+  margin: 0;
+  position: relative;
+  color: white;
+  font-family: "Neon";
+  font-weight: 900;
+  word-spacing: 0.5rem;
+}
+.texts {
+  display: flex;
+  /* .vert-direction does not control grand-children, only direct children of it. We need to specify flex direction for the children of .texts to follow since .vert-container has no effect on them */
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 2vh;
+  font-size: 2.5vmin;
+}
+
+.bio {
+  margin-top: 0.1rem;
+  color: white;
+  max-width: 50%;
+}
+.bio h3 {
+  margin-bottom: 0.3rem;
+  font-family: "Neon", sans-serif;
+  text-align: center;
+  font-size: 3.7vmin;
+}
+
+.social-medias {
+  margin-top: 0.5rem;
+  display: inline-flex;
+  justify-content: flex-start;
+  height: 4vh;
+  width: auto;
+  margin-bottom: 0.5rem;
+}
+.social-medias a {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+  color: white;
+  margin-left: 1vw;
+  text-decoration: none;
+  align-self: center;
+}
+.social-medias img {
+  height: 4vh;
+  width: auto;
+}
+.bio-details {
+  margin-top: 0;
+  padding: 0.4em 1em 0.4rem 1em;
+  max-height: 35vh;
+  overflow: auto;
+  border: 2px solid white;
+}
+.bio-details h4 {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 2.5vmin;
+}

@@ -30,10 +30,13 @@
   --neon3-color: #acdae1;
 }
 body {
-  margin: 0px;
-  background-repeat: repeat;
+  margin: 0;
+  background-repeat: cover;
   background: radial-gradient(circle at bottom, #635bd0 -25%, black 75%);
-  height: 100vh;
+  /* height: 100vh; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
   overflow: hidden;
 }
 
@@ -41,12 +44,13 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(99, 91, 208, 0.1) center / 50vw 50vh round;
+  /* background: transparent; */
 }
 .navbar {
   position: sticky;
@@ -61,6 +65,7 @@ body {
   height: 6.5vh;
   background: rgba(200, 200, 200, 0.15);
   margin-bottom: -6.5vh;
+  z-index: 3;
 }
 
 #navbar {
@@ -103,7 +108,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .band-name {
@@ -112,13 +117,13 @@ body {
   position: absolute;
   color: white;
   letter-spacing: 1.3px;
-  z-index: 3;
+  z-index: 1;
   font-size: 2.5vw; /* font adjusts to screen shrinking and growing */
   display: flex;
   gap: 0.03rem;
 }
 .whats {
-  z-index: 3;
+  z-index: 2;
   left: -50%;
   top: 35%;
   /* font-size: 1.7rem; */
@@ -133,7 +138,7 @@ body {
     0 0 20px var(--neon1-color);
 }
 .the {
-  z-index: 3;
+  z-index: 2;
   top: -40%;
   left: 38%;
 }
@@ -152,7 +157,7 @@ body {
     0 0 20px var(--neon3-color);
 }
 .vibe {
-  z-index: 3;
+  z-index: 2;
   right: -34.5%;
   top: 35%;
 }
@@ -164,6 +169,7 @@ body {
   position: absolute;
   inset: 0; /* Position the div 0px from each edge of its parent (measured against the view point since other parents are position static (children ignores parents with static positioning) since static is default and doesn't count as a contatining block).  */
   z-index: -1;
+  pointer-events: none;
 }
 
 .stars1 {
