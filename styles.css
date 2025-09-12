@@ -104,7 +104,7 @@ body {
 }
 /* Making the text bigger when we hover over it on the navbar */
 #navbar a:hover p {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 #logo-container {
   position: relative;
@@ -307,16 +307,31 @@ body {
     transform: scale(1.5);
   }
 }
-#back {
+
+#back-button-background {
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 6vh;
+  width: fit-content;
+}
+/* #back {
   display: flex;
   position: absolute;
   top: 0;
   left: 0;
-  width: 60px;
-  height: 20px;
+  width: fit-content;
+  height: 5vh;
   background-color: white;
   border-radius: 4px;
+} */
+
+#back img {
+  height: 100%;
+  max-width: 100%;
 }
 #back:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }

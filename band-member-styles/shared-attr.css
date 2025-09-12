@@ -28,6 +28,7 @@ h3 {
 }
 
 #image-container img {
+  border: 1px solid white;
   border-radius: 5%;
   height: auto;
   width: 33%;
@@ -38,7 +39,6 @@ h3 {
   position: relative;
   color: white;
   font-family: "Neon";
-  font-weight: 900;
   word-spacing: 0.5rem;
 }
 .texts {
@@ -86,7 +86,7 @@ h3 {
 }
 .bio-details {
   margin-top: 0;
-  padding: 0.4em 1em 0.4rem 1em;
+  padding: 0.4em 1em 0.7em 1em;
   max-height: 35vh;
   overflow: auto;
   border: 2px solid white;
