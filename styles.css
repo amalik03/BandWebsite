@@ -44,7 +44,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -329,8 +329,11 @@ body {
 } */
 
 #back img {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
   height: 100%;
-  max-width: 100%;
+  width: auto;
 }
 #back:hover {
   transform: scale(1.08);
