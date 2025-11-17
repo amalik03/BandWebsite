@@ -49,30 +49,87 @@ h3 {
   width: 95%;
 }
 
-#name-instrument {
-  margin: 0;
-  position: relative;
-  color: white;
-  font-family: "Neon";
-  word-spacing: 0.5rem;
-  margin-bottom: 0.5vh;
-}
-
 @media (max-width: 768px) {
   #name-instrument {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    word-spacing: 4px;
+    margin: 0.1vh 0 0.25vh 0;
+  }
+  .bio {
+    margin-top: 0.25vh;
+  }
+  .bio h3 {
+    margin-bottom: 0.15vh;
+    font-size: 2.8vh;
+  }
+  .social-medias a {
+    font-size: 2.5vh;
+  }
+  .social-medias img {
+    height: 3vh;
+    width: auto;
+  }
+  .bio-details h4 {
+    font-size: 1.6vh;
   }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
   #name-instrument {
     font-size: 1.6rem;
+    word-spacing: 7px;
+    margin: 0.075vh 0 1.1vh 0;
+  }
+  .bio {
+    margin-top: 1.1vh;
+  }
+  .bio h3 {
+    margin-bottom: 0.3vh;
+    font-size: 4.5vh;
+  }
+  .social-medias a {
+    font-size: 4vh;
+  }
+  .social-medias img {
+    height: 4vh;
+    width: auto;
+  }
+  .bio-details h4 {
+    font-size: 2.5vh;
   }
 }
+
 @media (min-width: 1025px) {
   #name-instrument {
     font-size: 2.3rem;
+    word-spacing: 10px;
+    margin: 0.05vh 0 1.2vh 0;
+  }
+  .bio {
+    margin-top: 1.2vh;
+  }
+  .bio h3 {
+    margin-bottom: 0.45vh;
+    font-size: 6vh;
+  }
+  .social-medias a {
+    font-size: 5vh;
+  }
+  .social-medias img {
+    height: 5vh;
+    width: auto;
+  }
+  .bio-details h4 {
+    font-size: 2.55vh;
   }
 }
+
+#name-instrument {
+  position: relative;
+  color: white;
+  font-family: "Neon";
+}
+
 .texts {
   display: flex;
   position: relative;
@@ -86,7 +143,6 @@ h3 {
 }
 
 .bio {
-  margin-top: 0.5vh;
   color: white;
   width: 50%;
   display: flex;
@@ -97,20 +153,15 @@ h3 {
 }
 
 .bio h3 {
-  margin-bottom: 0.3rem;
   font-family: "Neon", sans-serif;
   text-align: center;
-  /* font-size: 1.5rem; */
-  font-size: 4vmin;
 }
 
 .social-medias {
-  /* margin-top: 1vh; */
   display: inline-flex;
   justify-content: flex-start;
   height: 4vh;
   width: auto;
-  /* margin-bottom: 1vh; */
 }
 .social-medias a {
   display: flex;
@@ -120,12 +171,13 @@ h3 {
   margin-left: 1vw;
   text-decoration: none;
   align-self: center;
-  font-size: 3vh;
 }
-.social-medias img {
+
+/* .social-medias img {
   height: 4vmin;
   width: auto;
-}
+} */
+
 .bio-details {
   margin-top: 0;
   padding: 0.2em 1em;
@@ -141,5 +193,4 @@ h3 {
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
   line-height: 1.7;
-  font-size: 2.5vmin;
 }

@@ -1,5 +1,6 @@
 body {
-  background: radial-gradient(circle at bottom, #015f3c -25%, black 75%);
+  /* background: radial-gradient(circle at bottom, #015f3c -25%, black 75%); */
+  background: radial-gradient(circle at 50% 110%, #015f3c -5%, black 80%);
 }
 #image-container img {
   box-shadow: 0 4px 12px #015f3c35;
