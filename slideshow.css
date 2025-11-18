@@ -1,4 +1,111 @@
-#slider {
+/* @media (max-width: 768px) {
+  .carousel {
+    position: relative;
+    height: 65vh;
+    width: 30vw;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel {
+    position: relative;
+    height: 65vh;
+    width: 30vw;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .carousel {
+    position: relative;
+    height: 65vh;
+    width: 30vw;
+    margin: 0 auto;
+  }
+} */
+.carousel {
+  position: relative;
+  height: 65vh;
+  width: 30vw;
+  margin: 0 auto;
+}
+
+.carousel_image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.carousel_track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel_track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.carousel_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#prev-button {
+  left: -6vh;
+  filter: invert(100%) sepia(0%) saturate(7445%) hue-rotate(344deg);
+}
+
+#next-button {
+  right: -6vh;
+  filter: invert(100%) sepia(0%) saturate(7445%) hue-rotate(344deg);
+}
+
+.carousel_button img {
+  width: 3.5vh;
+}
+
+.carousel_nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carousel_indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: rgb(0, 0, 0, 0.3);
+  margin: 0 1.4vw;
+  cursor: pointer;
+}
+
+.carousel_indicator.current_slide {
+  background: rgb(255, 255, 255, 0.8);
+}
+
+.is_hidden {
+  display: none;
+}
+/* #slider {
   width: 30vw;
   height: auto;
   text-align: center;
@@ -34,4 +141,4 @@
   height: 100%;
   object-fit: cover;
   display: block;
-}
+} */

@@ -9,31 +9,72 @@
   </head>
   <body>
     <div id="gradient">
-      <div id="back-button-background">
-        <a href="../index.html" id="back">
-          <img src="/assets/pics/back-button.svg"> </img>
-        </a>
+      <a href="../index.html" id="back">
+        <img src="/assets/pics/back-button.svg" />
+      </a>
+
+      <div class="carousel">
+        <button class="carousel_button is_hidden" id="prev-button">
+          <img src="../assets/pics/back.png" alt="previous page" />
+        </button>
+
+        <div class="carousel_track-container">
+          <ul class="carousel_track">
+            <li class="slide current_slide">
+              <img
+                class="carousel_image"
+                src="/assets/pics/Raina-Band-Pic.jpg"
+                alt="Picture of Raina" />
+            </li>
+            <li class="slide">
+              <img
+                class="carousel_image"
+                src="/assets/pics/Tre-Band-Pic.jpg"
+                alt="Picture of Tre" />
+            </li>
+            <li class="slide">
+              <img
+                class="carousel_image"
+                src="/assets/pics/Jack-Band-Pic.jpg"
+                alt="Picture of Jack" />
+            </li>
+            <li class="slide">
+              <img
+                class="carousel_image"
+                src="/assets/pics/Jacob-Band-Pic.jpg"
+                alt="Picture of Jacob" />
+            </li>
+          </ul>
         </div>
-    <div id="slider">
-        <div id="slides">
-            <div class="slide">
-                <img src="/assets/pics/Raina-Band-Pic.jpg" alt="Picture of Raina" />
-            </div>
-            <div class="slide">
-                <img src="/assets/pics/Tre-Band-Pic.jpg" alt="Picture of Tre" />
-            </div>
-            <div class="slide">
-                <img src="/assets/pics/Jack-Band-Pic.jpg" alt="Picture of Jack" />
-            </div>
-            <div class="slide">
-                <img src="/assets/pics/Jacob-Band-Pic.jpg" alt="Picture of Jacob" />
-            </div>
+
+        <button class="carousel_button" id="next-button">
+          <img src="../assets/pics/next.png" alt="next page" />
+        </button>
+
+        <div class="carousel_nav">
+          <button class="carousel_indicator current_slide"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
         </div>
-    </div>
+      </div>
       <div class="stars stars1"></div>
       <div class="stars stars2"></div>
       <div class="stars stars3"></div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="../carousel.js"></script>
 </html>
+
+<!-- <div class="slide">
+            <img src="/assets/pics/Raina-Band-Pic.jpg" alt="Picture of Raina" />
+          </div>
+          <div class="slide">
+            <img src="/assets/pics/Tre-Band-Pic.jpg" alt="Picture of Tre" />
+          </div>
+          <div class="slide">
+            <img src="/assets/pics/Jack-Band-Pic.jpg" alt="Picture of Jack" />
+          </div>
+          <div class="slide">
+            <img src="/assets/pics/Jacob-Band-Pic.jpg" alt="Picture of Jacob" />
+     </div> -->
