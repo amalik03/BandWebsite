@@ -266,7 +266,7 @@ body {
   }
 }
 
-.band-member1 {
+/* .band-member1 {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -301,11 +301,45 @@ body {
   right: 35%;
   background-image: radial-gradient(15px 15px, #fbe706, rgba(255, 255, 255, 0));
   animation: band-member-twinkle 5s ease-in-out infinite;
+} */
+
+.band-member1 {
+  background-image: radial-gradient(15px 15px, #00dce8, rgba(255, 255, 255, 0));
+  --bm-pos: translate(-450%, -500%);
+}
+.band-member2 {
+  background-image: radial-gradient(15px 15px, #015f3c, rgba(255, 255, 255, 0));
+  --bm-pos: translate(350%, -500%);
+}
+.band-member3 {
+  background-image: radial-gradient(15px 15px, #b20afb, rgba(255, 255, 255, 0));
+  --bm-pos: translate(-450%, 500%);
+}
+.band-member4 {
+  background-image: radial-gradient(15px 15px, #fbe706, rgba(255, 255, 255, 0));
+  --bm-pos: translate(350%, 500%);
+}
+
+.band-member1,
+.band-member2,
+.band-member3,
+.band-member4 {
+  position: absolute;
+  width: 5vmin;
+  height: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: var(--bm-pos);
+  animation: band-member-twinkle 5s ease-in-out infinite;
 }
 
 @keyframes band-member-twinkle {
+  0%,
+  100% {
+    transform: var(--bm-pos) scale(1);
+  }
   50% {
-    transform: scale(1.5);
+    transform: var(--bm-pos) scale(1.5);
   }
 }
 
