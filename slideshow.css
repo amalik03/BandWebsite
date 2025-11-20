@@ -35,6 +35,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  display: block;
   overflow: hidden;
 }
 
@@ -61,20 +62,21 @@
 } */
 
 .slide {
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0%;
   left: 0%;
   transform: translate(0%, 0%) scale(0.7);
   opacity: 0.3;
   filter: grayscale(100%);
-  width: 100%;
   bottom: 0;
   z-index: 2;
   transition: transform 250ms ease-in, opacity 250ms ease, filter 250ms ease;
 }
 
 .slide.prev_slide {
-  transform: translate(0, 0) scale(0.7);
+  transform: translate(-100%, 0) scale(0.7);
   opacity: 0.3;
   filter: grayscale(100%);
   z-index: 2;
@@ -82,7 +84,7 @@
 }
 
 .slide.next_slide {
-  transform: translate(0%, 0) scale(0.7);
+  transform: translate(100%, 0) scale(0.7);
   opacity: 0.3;
   filter: grayscale(100%);
   z-index: 2;
