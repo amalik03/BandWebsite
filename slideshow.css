@@ -41,7 +41,7 @@
 .carousel_track-container {
   height: 100%;
   position: relative;
-  overflow: hidden;
+  overflow: none;
 }
 
 .carousel_track {
@@ -50,14 +50,50 @@
   list-style: none;
   position: relative;
   height: 100%;
-  transition: transform 250ms ease-in;
+  /* transition: transform 250ms ease-in, opacity 250ms ease, filter 250ms ease; */
 }
 
-.slide {
+/* .slide {
   position: absolute;
   top: 0;
   width: 100%;
   bottom: 0;
+} */
+
+.slide {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%) scale(0.7);
+  opacity: 0.3;
+  filter: grayscale(100%);
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  transition: transform 250ms ease-in, opacity 250ms ease, filter 250ms ease;
+}
+
+.slide.prev_slide {
+  transform: translate(0, 0) scale(0.7);
+  opacity: 0.3;
+  filter: grayscale(100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.slide.next_slide {
+  transform: translate(0%, 0) scale(0.7);
+  opacity: 0.3;
+  filter: grayscale(100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.slide.current_slide {
+  transform: translate(0%, 0%) scale(1);
+  opacity: 1;
+  filter: none;
+  z-index: 3;
 }
 
 .carousel_button {
@@ -70,6 +106,7 @@
 }
 
 #prev-button {
+  z-index: 4;
   left: -6vh;
   filter: invert(100%) sepia(0%) saturate(7445%) hue-rotate(344deg);
 }
